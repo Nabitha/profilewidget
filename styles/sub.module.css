@@ -1,0 +1,12 @@
+.placetext {
+  font-size: 10px;
+  font-weight: 400;
+}
+.subdetails {
+  display: flex;
+}
+@media screen and (max-width: 630px) {
+  .placetext {
+    font-size: 7px;
+  }
+}

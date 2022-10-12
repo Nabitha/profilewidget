@@ -1,129 +1,129 @@
-.container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
+.maincontainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  height: 100vh;
 }
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.subcontainer {
+  background-color: royalblue;
+  width: 26%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.innercontainer {
+  background-color: white;
+  width: 89%;
+  height: 96%;
+  border-radius: 15px;
 }
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.headercontainer {
+  display: flex;
+  justify-content: end;
+  padding: 8%;
+  gap: 6%;
 }
-
-.title,
-.description {
+.imagecontainer {
+  margin: 5%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.img {
+  border-radius: 10px;
+}
+.mainimagecontainer {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.avatarcontainer {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.profilename {
+  font-size: 18px;
   text-align: center;
 }
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.verifiedcontainer {
+  width: 20px;
+  height: 20px;
 }
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.profilenamecontainer {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  align-items: center;
+  margin-top: 26%;
 }
+.descriptioncontainer {
+  margin-top: -8%;
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.description {
+  font-size: 12px;
+  text-align: center;
+}
+.profilecontainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -5%;
+}
+.btn {
+  background-color: royalblue;
+  color: white;
+  border: none;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
+  padding: 5% 25%;
+  text-align: center;
+  text-decoration: none;
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
 }
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.subdetailscontainer {
+  display: grid;
+  justify-content: center;
 }
+@media screen and (max-width: 630px) {
+  .profilename {
+    font-size: 10px;
+  }
+  .description {
+    font-size: 6px;
+  }
+  .btn {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 3% 18%;
+    text-align: center;
+    text-decoration: none;
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+    font-size: 7px;
+    margin: 2px 1px;
+    cursor: pointer;
+  }
+  .subdetailscontainer {
+    display: grid;
+    justify-content: center;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+@media screen and (max-width: 388px) {
+  .profilename {
+    font-size: 5px;
   }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
+  .description {
+    font-size: 4px;
+    font-weight: 300;
   }
 }

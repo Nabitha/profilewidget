@@ -1,0 +1,40 @@
+.followingcount {
+  font-size: 18px;
+}
+.followingtext {
+  font-size: 12px;
+  font-weight: 400;
+}
+.followerscount {
+  color: royalblue;
+  font-size: 18px;
+}
+.detailscontainer {
+  text-align: center;
+}
+@media screen and (max-width: 630px) {
+  .followingcount {
+    font-size: 10px;
+  }
+  .followingtext {
+    font-size: 6px;
+    font-weight: 100;
+  }
+  .followerscount {
+    color: royalblue;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 388px) {
+  .followingcount {
+    font-size: 6px;
+  }
+  .followingtext {
+    font-size: 3px;
+    font-weight: 100;
+  }
+  .followerscount {
+    color: royalblue;
+    font-size: 6px;
+  }
+}
